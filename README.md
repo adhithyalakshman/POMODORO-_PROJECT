@@ -22,6 +22,7 @@ imagec.place(x=180,y=100)
 # setting time machine
 work=Label(text="",font=("arial",20,"bold"),bg="green")
 work.place(x=280,y=420)
+# time machine in work mode
 def workt(countmw=24,countsw=60):
     global i
     if i>0:
@@ -44,6 +45,8 @@ def rese():
     imagec.itemconfig(counter, text=f"{countm}:{counts}")
     global i
     i=-1
+
+# time machine in break mode
 def breakt(countmb=4, countsb=60):
     global i
     if i>0:
